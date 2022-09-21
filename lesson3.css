@@ -1,0 +1,40 @@
+
+.middle {
+    background-image: url("lsn3bg.png");
+}
+
+#closing {
+    text-align: center;
+}
+
+.opener {
+    color: white;
+    background-color: yellowgreen;
+}
+
+h1 {
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+}
+
+a:link, a:visited{
+    color: orange;;
+}
+
+table {
+    height: 75%;
+    width: 75%;
+}
+
+th {
+    background-color: pink;
+}
+
+h3 {
+    background-color: teal;
+    color: pink;
+    height: 250px;
+}
