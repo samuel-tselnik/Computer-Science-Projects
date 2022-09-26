@@ -1,0 +1,61 @@
+#mountain {
+    background-color: lightblue;
+    text-align: center;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#meadow {
+    background-color: lightcoral;
+    text-align: center;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#beach {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#desert {
+    background-color: lightpink;
+    text-align: center;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#lake {
+    background-color: lightseagreen;
+    text-align: center;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
