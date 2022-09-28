@@ -1,5 +1,8 @@
 
-#ul {
+/*there's probably some junk in 
+there i don't need but it works*/
+
+ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -12,4 +15,15 @@
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 20px;
+    font-family: arial;   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: lime;
+    text-decoration: underline;
 }
