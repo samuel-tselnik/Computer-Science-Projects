@@ -1,0 +1,69 @@
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+
+
+
+/*Nav bar*/
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #865BEF;
+    list-style-type: none;  
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    font-family: arial;   
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.currentPage {
+  text-decoration: underline;
+}
+
+a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+#homelink {
+    color:aqua;
+}
+/*Gets rid of default small margins*/
+body {
+    margin:0;
+    padding:0;
+}
