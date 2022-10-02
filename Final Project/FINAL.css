@@ -62,15 +62,34 @@ body {
   margin: 1%;
 }
 
-/*Nav bar*/
+h1 {
+  color: white;
+  align-items: center;
+  font-size: 400%; 
+  background-image: url("./bardrinks1.png");
+  background-size: 97px;
+  background-blend-mode:lighten;
+  margin-top: 0%;
+  padding-bottom: 90px;
+}
+
+.measurements {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+
+}
+
+/*vvv   HERE    vvv*/
 ul.topbar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #865BEF;
+  background-color: #ffaa00;
   list-style-type: none;  
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0;
   padding-right: 25%;
   padding-left: 25%;
   padding-top: 18px;
