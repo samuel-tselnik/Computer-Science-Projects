@@ -63,22 +63,76 @@ body {
 }
 
 h1 {
-  color: white;
+  background-color: blue;
+  color: black;
   align-items: center;
   font-size: 400%; 
-  background-image: url("./bardrinks1.png");
-  background-size: 97px;
-  background-blend-mode:lighten;
   margin-top: 0%;
-  padding-bottom: 90px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
-.measurements {
+/*.homePage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}*/
+
+#left {
+  background-color: red;
+  flex-direction: column;
+  float: left;
+  max-width: 400px;
+}
+
+#right {
+  background-color: blue;
+  flex-direction: column;
+  float: right;
+  max-width: 400px;
+}
+
+.homeItem {
+  background-color: purple;
+  color: purple;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding: 7px 7px 7px 7px;
+  margin: 7px 7px 7px 7px;
+  border-radius: 5px;
+}
+
+#history {
+  background-color: lightgreen;
+  align-self: center;
+  max-width: 900px;
+  margin: 1px 1px 1px 1px;
+  padding: 5px 5px 5px 5px;
+}
+
+#measurements {
   display: flex;
   flex-direction: column;
   background-color: #ccc;
-
 }
+
+#categories {
+  background-color:#eee;
+}
+
+#mixing {
+  background-color: lightpink;
+  max-width: 400px;
+  
+}
+
+#resources {
+  background-color: lightcoral;
+}
+
 
 /*vvv   HERE    vvv*/
 ul.topbar {
