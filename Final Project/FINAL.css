@@ -69,10 +69,6 @@ body {
 
 
 /*Homepage Heading*/
-.upper {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin: 1%;
-}
 
 h1 {
   background-color: blue;
@@ -150,11 +146,24 @@ h1 {
 
 
 /* HOME PAGE ^^^
-/* NON HOME PAGE vvv
+/* NON HOME PAGE vvv*/
 
 
 
+.upper {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 1%;
+  margin-bottom: 10px;
+  background-color: lightgoldenrodyellow;
+  font-size: 140%;
+}
 
+/*Formatting of buttons*/
+.buttons {
+  display: flex;
+  flex-direction: column;
+
+}
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   background-color: #eee;
@@ -166,6 +175,7 @@ h1 {
   text-align: left;
   outline: none;
   font-size: 15px;
+  margin-bottom: 5px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
