@@ -158,6 +158,10 @@ h1 {
   font-size: 140%;
 }
 
+.upperImage {
+  padding: 5px 5px 5px 5px;
+}
+
 /*Formatting of buttons*/
 .buttons {
   display: flex;
@@ -175,7 +179,7 @@ h1 {
   text-align: left;
   outline: none;
   font-size: 15px;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -185,15 +189,64 @@ background-color: #ccc;
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-padding: 0 18px;
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.2s ease-out;
-background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 
 .drinkPicture {
-margin-top: 5px;
-margin-bottom: 5px;
-margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-right: 0px;
+}
+
+
+.ingOverIns {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 10px 15px 10px;
+  padding: 5px 15px 5px 15px;
+  background-color: #ccc;
+  max-width: 600px;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 5px 15px 5px 15px;
+  max-height: 70px;
+  background-color: red;
+  list-style-type: none;
+  list-style-position: inside; 
+  line-height: 25px;
+}
+
+.ingredients li {
+  background-color: purple;
+  margin: 2px 5px;
+}
+
+.instructions {
+  margin: 5px;
+  padding: 5px 15px 5px 15px;
+  background-color: lightpink;
+  font-size: large;
+}
+
+.drinkInfo {
+  margin-top: 25px;
+  padding: 15px 100px 5px 15px;
+  background-color: #ccc;
+  font-size: 120%;
+  max-width: 600px;
+  margin-bottom: 15px;
 }
