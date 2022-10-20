@@ -14,19 +14,19 @@
         </ul> 
     </nav>
 
-<!--ADD SYRUPS-->
+
     <h1 align="center">Drinks 'N Stuff</h1>
+
     <div class = "homePage">
 
         <div id="left" class="homeItem">
-        <div id="measurements" class="left">
 
+        <div id="measurements" class="left">
             <h2>Measurement Conversions</h2>
             <p>1oz = 30mL</p>
             <p>1oz = 2tbsp</p>
             <p>1oz = 6tsp</p>
             <p>2oz = 1/4cup</p>
-
         </div>
 
         <div id="categories" class="left">
@@ -111,38 +111,77 @@
         </div>
 
         <div id="right" class="homeItem">
-        <div id="mixing" class="right">
-            <h2>Why James Bond Sucks</h2>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
-            ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, 
-            tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-            et sapien ullamcorper pharetra.</p>
-        </div>
 
-        <div id="resources" class="right">
-            <h2>Good Resources</h2>
-            <ul>
-                <li>Lorem, ipsum pellentesque</li>
-                <li>Vestibulum tortor quam, feugiat vitae, ultricies eget, 
-                    tempor sit amet, ante.</li>
-                <li>Donec eu libero sit amet quam egestas semper. Aenean
-                    ultricies mi vitae est.</li>
-                <li>Mauris placerat eleifend leo. Quisque sit amet est
-                    et sapien ullamcorper pharetra.</li>
-            </ul>
-        </div>
-        </div>
+            <!--Syrups-->
+            <div id="syrups" class="right">
+                <h2>Syrups</h2>
 
+                    <button type="button" class="collapsibleSyrup">
+                        + Simple Syrup
+                    </button>
+                    <div class="content">
+                    <p class = "syrupInstructions">
+                        Unsurprisingly, the most simple syrup. To make, just put a 1:1 
+                        mixture of sugar and water over heat until the sugar dissolves. That's it.
+                    </p></div>
+
+                    <button type="button" class="collapsibleSyrup">
+                        + Rich Simple Syrup
+                    </button>
+                    <div class="content">
+                    <p class = "syrupInstructions">
+                        One step above simple syrup, rich simple syrup strays away from 
+                        a 1:1 mixture and instead adds more sugar. Not only does this make 
+                        the drink sweeter, but it also gives the syrup a slight orange hue
+                        which can be utlizied in certain situations. It often uses a 3:2 mixture
+                        but it can vary by preference.
+                    </p>
+                    </div>
+            </div>
+
+
+                <script>
+                    var coll = document.getElementsByClassName("collapsibleSyrup");
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                        } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        }
+                    });
+                    }
+                </script>
+            
+            <!--Mixing-->
+            <div id="mixing" class="right">
+                <h2>Why James Bond Sucks</h2>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, 
+                tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+                ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+                et sapien ullamcorper pharetra.</p>
+            </div>
+
+            <!--Resources-->
+            <div id="resources" class="right">
+                <h2>Good Resources</h2>
+                <ul>
+                    <li>Lorem, ipsum pellentesque</li>
+                    <li>Vestibulum tortor quam, feugiat vitae, ultricies eget, 
+                        tempor sit amet, ante.</li>
+                    <li>Donec eu libero sit amet quam egestas semper. Aenean
+                        ultricies mi vitae est.</li>
+                    <li>Mauris placerat eleifend leo. Quisque sit amet est
+                        et sapien ullamcorper pharetra.</li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-
-    <!--
-        1oz = 30mL
-        1oz = 2tbsp
-        1oz = 6tsp
-        2oz = 1/4cup
-    -->
-    
-
 
 </body>

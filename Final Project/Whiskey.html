@@ -43,32 +43,31 @@
 
     </div>
 
-    <!--Adds collapsible button-->
+    <!--Whiskey Sour-->
     <div class = "buttons">
 
-        <div id = "b1">
+        <div class = "buttonSort">
             <button type="button" class="collapsible">
                 Whiskey Sour
             </button>
             <div class="content">
 
-                <!--  vvv AND HERE  vvv-->
                 <img class="drinkPicture" src="./whiskeysour.png" alt="Whiskey" align="left" height="25%"/>
                 <div class = "ingOverIns">
-                <ul class="ingredients">
-                    <div class="ingredients">
-                    <li>2oz. Bourbon</li>
-                    <li>1 Egg White</li>
-                    <li>0.75oz Lemon Juice</li>
-                    <li>0.5oz Simple Syrup</li>
-                    </div>
-                </ul>
-                <p class = "instructions">
-                    Mix all ingredients <b>except the egg white</b> in the shaker. In the other part of the shaker, crack in the egg white.
-                    combine the two and dry shake thoroughly for a nice foam. Now gently add ice and lightly shake to seal the shaker, then
-                    really start shaking to increase the foam. Strain through a hawthorne strainer into a <em class = "glass">coupe glass</em>, and garnish with
-                    <em class = "garnish">3 dashes angostura bitters.</em>
-                </p>
+                    <ul class="ingredients">
+                        <div class="ingredients">
+                        <li>2oz. Bourbon</li>
+                        <li>1 Egg White</li>
+                        <li>0.75oz Lemon Juice</li>
+                        <li>0.5oz Simple Syrup</li>
+                        </div>
+                    </ul>
+                    <p class = "instructions">
+                        Mix all ingredients <b>except the egg white</b> in the shaker. In the other part of the shaker, crack in the egg white.
+                        combine the two and dry shake thoroughly for a nice foam. Now gently add ice and lightly shake to seal the shaker, then
+                        really start shaking to increase the foam. Strain through a hawthorne strainer into a <em class = "glass">coupe glass</em>, and garnish with
+                        <em class = "garnish">3 dashes angostura bitters.</em>
+                    </p>
                 </div>
                 <p class = "drinkInfo">
                     The whiskey sour is an early drink, which first appeared in lkasdf by alk;sdf in 10935. But it's believed to have variants far
@@ -76,34 +75,61 @@
                     asdlg. It comes as a result of a lack of vitamin d, which is plentiful in citrus. Of course, downing lemons wasn't to any sailors'
                     liking. So, the citrus was combined with whiskey, because a shot of whiskey helps the medicine go down. 
                     This original version doesn't actually include an egg white- the addition of an egg white came later, and technically makes it
+                    a boston sour- but when people say whiskey sour, it's commonly accepted that this means with the white. So, the citrus was combined with 
+                    whiskey, because a shot of whiskey helps the medicine go down. 
+                    This original version doesn't actually include an egg white- the addition of an egg white came later, and technically makes it
                     a boston sour- but when people say whiskey sour, it's commonly accepted that this means with the white.
                 </p>
 
-
             </div>
         </div>
 
-        <div id = "b2">
+
+        <!--Old Fashioned-->
+        <div class = "buttonSort">
             <button type="button" class="collapsible">
-                Whiskey Sour
+                Old Fashioned
             </button>
             <div class="content">
-
-                <!--  vvv AND HERE  vvv-->
-                <img class="drinkPicture" src="./whiskey1.png" alt="Whiskey" align="left" height="25%"/>
-                <ul class="ingredients">
-                    <div class="ingredients">
-                    <li>2oz. Bourbon</li>
-                    <li>1 Egg White</li>
-                    <li></li>
-                    </div>
-                </ul>
-                <p class = "instructions">
-                    asdgasdlui
+                <img class="drinkPicture" src="./oldfashioned1.png" alt="Whiskey" align="left" height="25%"/>
+                <div class="ingOverIns">
+                    <ul class="ingredients">
+                        <div class="ingredients">
+                        <li>2oz. Bourbon</li>
+                        <li>1 Sugar Cube</li>
+                        <li>3 Dashes Angostura Bitters</li>
+                        <li></li>
+                        </div>
+                    </ul>
+                    <p class = "instructions">
+                        Muddle sugar into bitters. Simple syrup can be used in place of sugar
+                        cube if desired. A splash of highly carbonated water can help. Add bourbon
+                        with a big rock and stir just enough. Garnish with <em class = "garnish">rabbits
+                        ears garnish</em>.
+                        </em>
+                    </p>
+                </div>
+                <p class = drinkInfo>
+                    The old fashioned is one of the earliest drinks ever conceived, and to this day is the most popular drink ever. When mixed drinks were
+                    first being made, the word cocktail really only meant a spirit, bitters and sugar, and that's what this is. It's spawned many variants, 
+                    being such a simple starting point, and even the garnish is disputed. It's often garnished with just an orange twist, but I prefer rabbits ears,
+                    which is both a lemon and orange slice. Some people smoke the glass, some light the twists, and of course everybody has their whiskey preference,
+                    but most old fashioneds are made with some type of bourbon.
                 </p>
 
             </div>
         </div>
+
+        <script>
+            var $divs = $("div.buttonSort");
+
+            $('#alphBnt').on('click', function () {
+                var alphabeticallyOrderedDivs = $divs.sort(function (a, b) {
+                    return $(a).find("button").text() > $(b).find("button").text();
+                });
+                $("#container").html(alphabeticallyOrderedDivs);
+            });
+        </script>
     </div>
     
 
