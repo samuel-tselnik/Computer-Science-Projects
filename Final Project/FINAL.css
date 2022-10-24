@@ -165,7 +165,14 @@ h1 {
 /* NON HOME PAGE vvv*/
 
 
+h3 {
+  font-size: 140%;
+  margin-bottom: 5px;
+}
 
+.upperPar {
+  margin-top: 0px;
+}
 .upper {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 1%;
@@ -177,6 +184,9 @@ h1 {
 .upperImage {
   padding: 5px 5px 5px 5px;
 }
+
+
+
 
 /*Formatting of buttons*/
 .buttons {
