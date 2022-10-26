@@ -83,12 +83,11 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: flex-start;
+
 }
 
 /*ids are divs, classes for individual boxes*/
 #left {
-  background-color: red;
   flex-direction: column;
   float: left;
   max-width: 400px;
@@ -96,7 +95,6 @@ h1 {
 }
 
 #right {
-  background-color: blue;
   flex-direction: column;
   float: right;
   max-width: 400px;
@@ -107,14 +105,12 @@ h1 {
   border-radius: 5px;
   background-color:#eee;
   font-size: 130%;
-  padding-left: 4px;
+  padding: 8px;
   padding-top: 0px;
 }
 
 .homeItem {
-  padding: 7px 7px 7px 7px;
-  margin: 7px 7px 7px 7px;
-  border-radius: 5px;
+  
 }
 
 #history {
@@ -123,6 +119,8 @@ h1 {
   max-width: 900px;
   font-size: 200%;
   padding: 0px 30px 10px 30px;
+  margin-top: 0px;
+  border-radius: 5px;
 }
 
 /*Syrup buttons*/
@@ -143,10 +141,12 @@ h1 {
 
 /*individual boxes*/
 
+#syrups {
+
+}
 
 #measurements {
-  display: flex;
-  flex-direction: column;
+  line-height: 40px;
   background-color: #ccc;
 }
 
@@ -156,9 +156,12 @@ h1 {
 }
 
 #mixing {
-  max-width: 400px;
+
 }
 
+h2 {
+  padding-top: 5px;
+}
 
 
 /* HOME PAGE ^^^
@@ -176,9 +179,7 @@ h3 {
 .upper {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 1%;
-  margin-bottom: 10px;
-  background-color: lightgoldenrodyellow;
-  font-size: 140%;
+  margin-bottom: 10px;  font-size: 140%;
 }
 
 .upperImage {
