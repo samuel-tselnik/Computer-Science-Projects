@@ -1,27 +1,127 @@
 <head>
-    <title>Whiskey Drinks</title>
+    <title>Tequila Drinks</title>
     <link rel="stylesheet" type="text/css" href="FINAL.css">
 </head>
 
 <body>
 
     <nav>
-        <ul>
+        <ul class="topbar">
             <li class="topbar"><a id="homelink" href="FINAL.html">Home</a></li>
             <li class="topbar"><a href="Whiskey.html">Whiskey</a></li>
-            <li class="topbar"><a href="Vodka.html">Vodka</a></li>
-            <li id="currentPage"class="topbar"><a class="currentPage" href="Tequila.html">Tequila</a></li>
+            <li class="topbar"><a href="vodka.html">Vodka</a></li>
+            <li id="currentPage"class="topbar"><a href="Tequila.html">Tequila</a></li>
          </ul> 
     </nav>
 
-    <!--Adds collapsible button-->
-    <button type="button" class="collapsible">
-        Margarita
-    </button>
-    <div class="content">
-    <p>
-        asdgasdlui
-    </p>
+    <div class="upper">
+        
+        <img class = "upperImage" src="./images/tequila.png" alt="Whiskey" align="left" height="25%"/>
+        <img class = "upperImage" src="./images/patron.png" alt="Whiskey" align="right" height="22%"/>
+        <h3>Tequila</h3>
+        <p class = "upperPar"><em class = "upperDrinkInfo">The History of Whisky:</em>In the 11th century, Celtic monks brought the art of distillation
+            to Ireland, and they really only made wine. But on this island, it simply wasn't 
+            possible to grow. They had to be content with beer made from fermented barley, and by
+            1494, Whisky was first mentioned in a Scottish document. The first documented distillery
+            was Bushmills in Ireland, in 1608. When the French wine supply was halved by pests
+            in the late 18th century, the Scots were cut off from buying any. But one Scotsman had 
+            an idea: Why not store Whisky in sherry casks like cognac? The new concept was a major
+            success, and led Whisky to the rest of the world. Today, it's well known as one 
+            of the most popular liquors to both mix and enjoy on it's own all around the world, 
+            being used in many of the best drinks ever made, some of which are listed below.<em class = "upperDrinkInfo">What's
+            the difference between Whiskey and Whisky?</em> There are a couple reasons why the
+            different spellings came to be, but today, it's just where the drink is from.
+            In the USA and Ireland, it's Whiskey. In Scotland and Canada, it's Whisky. Throughout
+            this page, they're used often interchangeably.
+        </p>
+
+    </div>
+
+    <!--Whiskey Sour-->
+    <div class = "buttons">
+
+        <div class = "buttonSort">
+            <button type="button" class="collapsible">
+                Screwdriver
+            </button>
+            <div class="content">
+
+                <img class="drinkPicture" src="./images/screwdriver.png" alt="Whiskey" align="left" height="25%"/>
+                <div class = "ingOverIns">
+                    <ul class="ingredients">
+                        <div class="ingredients">
+                        <li>2oz. Vodka</li>
+                        <li>Orange Juice</li>
+                        </div>
+                    </ul>
+                    <p class = "instructions">
+                        Easy as can be- put them in a nice cold glass with some ice, filling the glass with orange
+                        juice. Feel free to garnish with 
+                        <em class = "garnish">an orange wedge or wheel.</em>
+                    </p>
+                </div>
+                <p class = "drinkInfo">
+                    The screwdriver was one of the first recorded cocktails made with vodka,
+                    and similar to other early drinks, wasn't made in a bar.There are many 
+                    potential stories for how the drink came about. One says it was made by 
+                    American oil workers in the Persian gulf in the middle of the 20th century.
+                    While working, they wanted a drink. So, they added some Vodka to their 
+                    orange juice, and stir it with a screwdriver as that's what they had on hand.
+                    Another possibility is that it was made by American marines during WW2,
+                    while other stories say it was invented by Turkish intelligence agents, Balkan
+                    refugees and American engineers in the Park Hotel. However it came to be, it's 
+                    now enjoyed as one of the easiest go-to drinks there is.
+                </p>
+
+            </div>
+        </div>
+
+
+        <!--Old Fashioned-->
+        <div class = "buttonSort">
+            <button type="button" class="collapsible">
+                Old Fashioned
+            </button>
+            <div class="content">
+                <img class="drinkPicture" src="./images/oldfashioned1.png" alt="Whiskey" align="left" height="25%"/>
+                <div class="ingOverIns">
+                    <ul class="ingredients">
+                        <div class="ingredients">
+                        <li>2oz. Bourbon</li>
+                        <li>1 Sugar Cube</li>
+                        <li>3 Dashes Angostura Bitters</li>
+                        <li></li>
+                        </div>
+                    </ul>
+                    <p class = "instructions">
+                        Muddle sugar into bitters. Simple syrup can be used in place of sugar
+                        cube if desired. A splash of highly carbonated water can help. Add bourbon
+                        with a big rock and stir just enough. Garnish with <em class = "garnish">rabbits
+                        ears garnish</em>.
+                        </em>
+                    </p>
+                </div>
+                <p class = drinkInfo>
+                    The old fashioned is one of the earliest drinks ever conceived, and to this day is the most popular drink ever. When mixed drinks were
+                    first being made, the word cocktail really only meant a spirit, bitters and sugar, and that's what this is. It's spawned many variants, 
+                    being such a simple starting point, and even the garnish is disputed. It's often garnished with just an orange twist, but I prefer rabbits ears,
+                    which is both a lemon and orange slice. Some people smoke the glass, some light the twists, and of course everybody has their whiskey preference,
+                    but most old fashioneds are made with some type of bourbon.
+                </p>
+
+            </div>
+        </div>
+
+        <script>
+            var $divs = $("div.buttonSort");
+
+            $('#alphBnt').on('click', function () {
+                var alphabeticallyOrderedDivs = $divs.sort(function (a, b) {
+                    return $(a).find("button").text() > $(b).find("button").text();
+                });
+                $("#container").html(alphabeticallyOrderedDivs);
+            });
+        </script>
     </div>
     
 
@@ -29,17 +129,17 @@
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
-
+        
         for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+          coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-            content.style.display = "none";
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
             } else {
-            content.style.display = "block";
+              content.style.maxHeight = content.scrollHeight + "px";
             }
-        });
+          });
         }
     </script>
 

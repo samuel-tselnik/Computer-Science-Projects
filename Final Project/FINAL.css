@@ -63,17 +63,34 @@ body {
     padding:0;
 }
 
-
+/*#rd {
+  padding-bottom: 15px;
+  margin-top: 0px;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  top: 300px;
+  background-image: url("./images/drinkline.png");
+  background-size: auto 100%;
+}*/
 /*Homepage Heading*/
-
+#headtext {
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 15 15 15 15;
+  text-emphasis: none;
+  font-style: normal;
+}
 h1 {
-  background-color: blue;
-  color: black;
+  background-image: url(./images/headerbg2.png);
+  background-attachment: fixed;
+  background-size: 60%;
+  color: white;
   align-items: center;
   font-size: 400%; 
   margin-top: 0%;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 
@@ -114,7 +131,7 @@ h1 {
 }
 
 #history {
-  background-color: lightgreen;
+  background-color: #eee;
   align-self: center;
   max-width: 900px;
   font-size: 200%;
