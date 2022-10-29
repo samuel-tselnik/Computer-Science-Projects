@@ -1,9 +1,17 @@
+:root {
+  --color1: #ECD5BB;
+  --color2: #C6A185;
+  --color25: #af896c;
+  --color3: #5f3a1e;
+}
+
+
 /*Nav bar*/
 ul.topbar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #ffaa00;
+  background-color: var(--color1);
   list-style-type: none;  
   margin-left: 0;
   margin-right: 0;
@@ -16,20 +24,18 @@ ul.topbar {
 a.currentPage {
   display: inline-block;
   position: relative;
-  color: #0087ca;
-  
 }
 
 li#currentPage {
   padding: 7px 10px 7px 10px;
   border-radius: 5px;
-  background-color: blue;
+  background-color: var(--color2);
 }
 
 a {
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: var(--color3);
   text-decoration: none;
 }
 
@@ -41,7 +47,7 @@ a:after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: var(--color3);
   transform-origin: center;
   transition: transform 0.25s ease-out;
 }
@@ -52,7 +58,7 @@ a:hover:after {
 }
 
 #homelink {
-    color: white;
+    color: var(--color3);
 }
 
 /*^^Nav Bar^^*/
@@ -61,6 +67,7 @@ a:hover:after {
 body {
     margin:0;
     padding:0;
+    background-color: var(--color1);
 }
 
 /*#rd {
@@ -75,7 +82,7 @@ body {
 }*/
 /*Homepage Heading*/
 #headtext {
-  background-color: lightblue;
+  background-color: var(--color1);
   border-radius: 5px;
   padding: 15 15 15 15;
   text-emphasis: none;
@@ -85,7 +92,7 @@ h1 {
   background-image: url(./images/headerbg2.png);
   background-attachment: fixed;
   background-size: 60%;
-  color: white;
+  color: var(--color2);
   align-items: center;
   font-size: 400%; 
   margin-top: 0%;
@@ -105,6 +112,12 @@ h1 {
 
 /*ids are divs, classes for individual boxes*/
 #left {
+  border-style:ridge;
+  border-color: var(--color2);
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  padding-right: 30px;
   flex-direction: column;
   float: left;
   max-width: 400px;
@@ -112,6 +125,12 @@ h1 {
 }
 
 #right {
+  border-style:ridge;
+  border-color: var(--color2);
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  padding-left: 30px;
   flex-direction: column;
   float: right;
   max-width: 400px;
@@ -120,7 +139,8 @@ h1 {
 
 .left, .right {
   border-radius: 5px;
-  background-color:#eee;
+
+  background-color:#;
   font-size: 130%;
   padding: 8px;
   padding-top: 0px;
@@ -131,7 +151,7 @@ h1 {
 }
 
 #history {
-  background-color: #eee;
+  background-color: #;
   align-self: center;
   max-width: 900px;
   font-size: 200%;
@@ -142,8 +162,7 @@ h1 {
 
 /*Syrup buttons*/
 .collapsibleSyrup {
-  background-color: #eee;
-  color: #444;
+  background-color: var(--color1);
   cursor: pointer;
   padding: 12px;
   width: 98%;
@@ -164,11 +183,11 @@ h1 {
 
 #measurements {
   line-height: 40px;
-  background-color: #ccc;
+  background-color: #;
 }
 
 #categories {
-  background-color:#eee;
+  background-color:#;
   margin-top: 15%;
 }
 
@@ -214,8 +233,8 @@ h3 {
 }
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #eee;
-  color: #444;
+  background-color: var(--color2);
+  color: var(--color3);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -228,7 +247,7 @@ h3 {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-background-color: #ccc;
+background-color: var(--color25);
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -242,7 +261,7 @@ background-color: #ccc;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: var(--color1);
 }
 
 .drinkPicture {
@@ -259,7 +278,7 @@ background-color: #ccc;
   justify-content: space-evenly;
   margin: 25px 15px 15px 15px;
   padding: 5px 15px 5px 15px;
-  background-color: rgb(226, 226, 226);
+  background-color: var(--color2);
   max-width: 600px;
 }
 
@@ -271,7 +290,7 @@ background-color: #ccc;
   margin: 5px;
   padding: 5px 15px 15px 15px;
   max-height: 70px;
-  background-color: rgb(211, 211, 211);
+  background-color: var(--color25);
   list-style-type: none;
   list-style-position: inside; 
   line-height: 30px;
@@ -285,7 +304,7 @@ background-color: #ccc;
   border-radius: 3px;
   margin: 5px;
   padding: 5px 15px 5px 15px;
-  background-color: rgb(211, 211, 211);
+  background-color:var(--color25);
   font-size: large;
 }
 
@@ -293,7 +312,7 @@ background-color: #ccc;
   border-radius: 3px;
   margin-top: 25px;
   padding: 15px 100px 5px 15px;
-  background-color: #ccc;
+  background-color: var(--color2);
   font-size: 120%;
   max-width: 800px;
   margin-bottom: 15px;
