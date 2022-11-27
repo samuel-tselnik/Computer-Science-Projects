@@ -6,6 +6,8 @@
 }
 
 
+
+
 /*Nav bar*/
 ul.topbar {
   display: flex;
@@ -139,8 +141,6 @@ h1 {
 
 .left, .right {
   border-radius: 5px;
-
-  background-color:#;
   font-size: 130%;
   padding: 8px;
   padding-top: 0px;
@@ -151,7 +151,6 @@ h1 {
 }
 
 #history {
-  background-color: #;
   align-self: center;
   max-width: 900px;
   font-size: 200%;
@@ -183,11 +182,9 @@ h1 {
 
 #measurements {
   line-height: 40px;
-  background-color: #;
 }
 
 #categories {
-  background-color:#;
   margin-top: 15%;
 }
 
@@ -317,3 +314,6 @@ background-color: var(--color25);
   max-width: 800px;
   margin-bottom: 15px;
 }
+
+
+

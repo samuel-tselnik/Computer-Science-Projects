@@ -1,0 +1,196 @@
+:root {
+  --color1: #ECD5BB;
+  --color2: #C6A185;
+  --color25: #af896c;
+  --color3: #5f3a1e;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.mainCollapsible {
+  background-color: var(--color2);
+  color: var(--color3);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .mainCollapsible:hover {
+background-color: var(--color25);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.bigContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--color1);
+}
+
+
+
+
+
+
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.secondaryCollapsible {
+  background-color: var(--color2);
+  color: var(--color3);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .secondaryCollapsible:hover {
+background-color: var(--color25);
+}
+
+
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--color1);
+}
+
+
+.alphabeticalSort
+
+
+.drinkPicture {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-right: 0px;
+  max-width: 15%;
+  max-height: 300px;
+}
+
+
+.ingOverIns {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 25px 15px 15px 15px;
+  padding: 5px 15px 5px 15px;
+  background-color: var(--color2);
+  max-width: 600px;
+}
+
+.ingredients{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 7px;
+  max-height: 170px;
+  background-color: var(--color25);
+  list-style-type: none;
+  list-style-position: outside; 
+  line-height: 30px;
+}
+
+#first{
+  border-color: var(--color25);
+  border-right-style:groove;
+  padding-right: 10px;
+}
+.ings12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: var(--color25);
+  border-radius: 3px;
+  margin: 5px;
+  padding: 5px 15px 15px 15px; 
+}
+
+li {
+  background-color: var(--color25);
+}
+
+.otherIngs{
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 5px 15px 15px 15px;
+  max-height: 170px;
+  background-color: var(--color25);
+  list-style-type: none;
+  list-style-position: outside; 
+  line-height: 30px;
+}
+
+.ingColumns {
+  display: flex;
+  flex-direction: row;
+}
+
+.garnish {
+  color:pink;
+}
+.ice {
+  color: aqua;
+}
+.glass{
+  color:white;
+}
+
+.ingredients li {
+
+}
+
+.instructions {
+  border-radius: 3px;
+  margin: 5px;
+  padding: 5px 15px 5px 15px;
+  background-color:var(--color25);
+  font-size: large;
+}
+
+.drinkInfo {
+  border-radius: 3px;
+  margin-top: 25px;
+  padding: 15px 20px 5px 15px;
+  background-color: var(--color2);
+  font-size: 120%;
+  max-width: 900px;
+  margin-bottom: 15px;
+}
+
+
+
