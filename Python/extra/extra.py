@@ -34,7 +34,7 @@ def ingredientCheck(neededIngredients, availableIngredients):
 inputting = 1
 while inputting == 1:
     originalInput = input('Ingredient:    ').lower()
-    specNeeded = ['rum', 'orange liqueur',]
+    specNeeded = ['rum', 'orange liqueur', 'whisky', 'whiskey']
     if originalInput in specNeeded:
         originalInput = input('Specify type:   ').lower()
     fixedInput = aliasFix(originalInput)
