@@ -72,5 +72,3 @@ while asking == True:
             print(drinks.drinks[drinkName][subject])
         else:
             print(f'No {subject} entry for {drinkName}')
-
-print(ingredients)
